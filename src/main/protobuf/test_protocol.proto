@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package nl.ronalddehaan;
+
+message Query {
+  string searchPhrase = 1;
+}
+
+message Response {
+ string text = 1;
+}
+
+service TestService {
+  rpc GetFeature(Query) returns (Response) {}
+}
