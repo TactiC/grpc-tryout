@@ -8,6 +8,7 @@ message Query {
 
 message Response {
  string text = 1;
+ repeated string token = 2;
 }
 
 service TestService {
